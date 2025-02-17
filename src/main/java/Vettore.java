@@ -2,8 +2,8 @@ public class Vettore<T> {
     private T[] vettore;
     private int contatore;
 
-    public Vettore(int x){
-        vettore = (T[]) new Object[x];
+    public Vettore(int length){
+        vettore = (T[]) new Object[length];
         contatore = 0;
     }
 
