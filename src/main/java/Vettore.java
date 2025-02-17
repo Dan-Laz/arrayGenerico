@@ -37,7 +37,7 @@ public class Vettore<T> {
     public int searchItem(T o){
         for (int i = 0; i < vettore.length; i++){
             if (vettore[i]==null){
-                return -1;
+                continue;
             }else if (vettore[i].equals(o)){
                 return i;
             }
