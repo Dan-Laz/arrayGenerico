@@ -8,7 +8,7 @@ public class Main {
         System.out.println(infissi.getItem(0));
 
         Mobile b = new Mobile(1200,9500);
-        mobili.setItem(0,b);
+        mobili.addItem(b);
         System.out.println(mobili.getItem(0));
     }
 }
