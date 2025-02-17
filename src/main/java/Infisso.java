@@ -37,4 +37,13 @@ public class Infisso {
     public String toString(){
         return "infisso - materiale : "+materiale+", altezza : "+altezza+", larghezza : "+larghezza;
     }
+
+    public boolean equals(Object o){
+        if (o instanceof Infisso){
+            Infisso i = (Infisso) o;
+            return this.materiale.equals(i.getMateriale());
+        }else{
+            return false;
+        }
+    }
 }

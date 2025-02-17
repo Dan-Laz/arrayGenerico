@@ -10,5 +10,8 @@ public class Main {
         Mobile b = new Mobile(1200,9500);
         mobili.addItem(b);
         System.out.println(mobili.getItem(0));
+
+        System.out.println(mobili.searchItem(b));
+        System.out.println(mobili.searchItem(new Mobile(1000,5000)));
     }
 }

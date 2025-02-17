@@ -28,4 +28,13 @@ public class Mobile {
     public String toString(){
         return "mobile - peso : "+peso+", prezzo : "+prezzo;
     }
+
+    public boolean equals(Object o){
+        if (o instanceof Mobile){
+            Mobile m = (Mobile) o;
+            return this.prezzo == m.getPrezzo();
+        }else{
+            return false;
+        }
+    }
 }

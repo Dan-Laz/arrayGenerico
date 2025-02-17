@@ -34,4 +34,15 @@ public class Vettore<T> {
             return true;
         }
     }
+    public int searchItem(T o){
+        for (int i = 0; i < vettore.length; i++){
+            if (vettore[i]==null){
+                return -1;
+            }else if (vettore[i].equals(o)){
+                return i;
+            }
+
+        }
+        return -1;
+    }
 }
